@@ -10,6 +10,6 @@ class Human:
 		self.y=self.y+nouveau_y
 		self.x=self.x+nouveau_x
     def draw():
-        print("drawing...")
+		print("drawing...")
 
         
