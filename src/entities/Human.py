@@ -9,7 +9,7 @@ class Human:
 	def move(self,nouveau_y,nouveau_x):
 		self.y=self.y+nouveau_y
 		self.x=self.x+nouveau_x
-    def draw():
+	def draw():
 		print("drawing...")
 
         
