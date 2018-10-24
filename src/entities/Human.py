@@ -14,5 +14,8 @@ class Human:
 
 	def typing():
 		print("hello")
-
+	
+	def end():
+		while True:
+			print("dededededededededededededdeedededededed")
         
