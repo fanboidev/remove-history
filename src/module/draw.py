@@ -8,7 +8,7 @@ class Objects:
 		pass
 
 	@staticmethod
-	def quad(point1, point2, point3, point4):
+	def rect(point1, point2, point3, point4):
 		"""
 
 		:param point1: tuple
