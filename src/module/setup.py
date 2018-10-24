@@ -10,4 +10,5 @@ def opengl(DISPLAY_DIMENSIONS):
 
 
 def pipigame(DISPLAY_DIMENSIONS):
-	pygame.display.set_mode(DISPLAY_DIMENSIONS, pygame.DOUBLEBUF | pygame.OPENGL)
+	display = pygame.display.set_mode(DISPLAY_DIMENSIONS, pygame.DOUBLEBUF | pygame.OPENGL)
+	return display

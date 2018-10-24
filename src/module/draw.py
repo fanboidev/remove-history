@@ -1,5 +1,7 @@
 from OpenGL.GL import *
-import OpenGL.GLU as glu
+import OpenGL.GLUT as glut
+import pygame
+
 
 class Objects:
 	def __init__(self):
@@ -7,6 +9,14 @@ class Objects:
 
 	@staticmethod
 	def quad(point1, point2, point3, point4):
+		"""
+
+		:param point1: tuple
+		:param point2: tuple
+		:param point3: tuple
+		:param point4: tuple
+		:return: void
+		"""
 		glBegin(GL_QUADS)
 
 		glVertex2f(point1[0], point1[1])
@@ -18,6 +28,13 @@ class Objects:
 
 	@staticmethod
 	def tri(point1, point2, point3):
+		"""
+
+		:param point1: tuple
+		:param point2: tuple
+		:param point3: tuple
+		:return: void
+		"""
 		glBegin(GL_TRIANGLES)
 
 		glVertex2i(point1[0], point1[1])
@@ -41,7 +58,7 @@ class Text:
 		glColor3f(1, 1, 1)
 		glRasterPos2f(posX, posY)
 		for ch in string:
-			glu.glutBitmapCharacter(glu.GLUT_BITMAP_9_BY_15, ctypes.c_int(ord(ch)))
+			glut.glutBitmapCharacter(glut.GLUT_BITMAP_9_BY_15, ctypes.c_int(ord(ch)))
 
 		if not blending:
 			glDisable(GL_BLEND)
