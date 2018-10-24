@@ -12,4 +12,7 @@ class Human:
 	def draw():
 		print("drawing...")
 
+	def typing():
+		print("hello")
+
         
