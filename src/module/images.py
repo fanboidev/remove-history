@@ -23,6 +23,7 @@ class Texture:
 
 	def render(self, posX, posY):
 		glBindTexture(GL_TEXTURE_2D, self.textureID)
+
 		glBegin(GL_QUADS)
 
 		glTexCoord(0, 1)
