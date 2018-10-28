@@ -19,10 +19,6 @@ def main():
 	x1=0
 	y1=0
 
-	dimensions = (800, 800)
-	display = setup.pipigame(dimensions)
-	setup.opengl(dimensions)
-
 	while True:
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
