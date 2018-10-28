@@ -20,8 +20,8 @@ def main():
 
 		texture.render(0, 0, 2, 2)
 		module.draw.Text.write("asdf", 0, 0)
-		module.draw.Objects.rect((15, 30), (0, 0), (23, 78), (2, 4))
-		module.draw.Objects.tri((23, 78), (2, 4), (0, 0))
+		module.draw.Objects.rect((15, 30), (0, 0), (23, 78), (2, 4), (0, 0, 0))
+		module.draw.Objects.tri((23, 78), (2, 4), (0, 0), (255, 0, 0))
 
 		for e in pygame.event.get():
 			if e.type == pygame.QUIT:

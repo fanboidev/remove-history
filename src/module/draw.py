@@ -20,7 +20,7 @@ class Objects:
 		"""
 		glBegin(GL_QUADS)
 
-		glColor3f(color)
+		glColor3f(*color)
 
 		glVertex2f(point1[0], point1[1])
 		glVertex2f(point2[0], point2[1])
@@ -41,7 +41,7 @@ class Objects:
 		"""
 		glBegin(GL_TRIANGLES)
 
-		glColor3f(color)
+		glColor3f(*color)
 
 		glVertex2i(point1[0], point1[1])
 		glVertex2i(point2[0], point2[1])
