@@ -11,11 +11,11 @@ class Objects:
 	def rect(point1, point2, point3, point4, color = (255, 255, 255)):
 		"""
 
-		:param point1: tuple
-		:param point2: tuple
-		:param point3: tuple
-		:param point4: tuple
-		:param color: tuple
+		:param point1: tuple or list
+		:param point2: tuple or list
+		:param point3: tuple or list
+		:param point4: tuple or list
+		:param color: tuple or list
 		:return: void
 		"""
 		glBegin(GL_QUADS)
@@ -33,10 +33,10 @@ class Objects:
 	def tri(point1, point2, point3, color = (255, 255, 255)):
 		"""
 
-		:param point1: tuple
-		:param point2: tuple
-		:param point3: tuple
-		:param color: tuple
+		:param point1: tuple or list
+		:param point2: tuple or list
+		:param point3: tuple or list
+		:param color: tuple or list
 		:return: void
 		"""
 		glBegin(GL_TRIANGLES)
@@ -56,7 +56,6 @@ class Text:
 
 	@staticmethod
 	def write(string, posX, posY):
-		glut.glutInit()
 		blending = False
 		if glIsEnabled(GL_BLEND):
 			blending = True
