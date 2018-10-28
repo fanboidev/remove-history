@@ -1,37 +1,35 @@
 # /usr/bin/env python3
 
-import module.draw
-import module.setup
+from module import draw
+from module import setup
 from module.images import Texture
-import OpenGL.GL as gl
+from OpenGL.GL import *
 import pygame
 from pygame.locals import *
 
 pygame.init()
 
 
-
-
 def main():
 	dimensions = (1366, 680)
-	display = module.setup.pipigame(dimensions)
-	module.setup.opengl(dimensions)
+	display = setup.pipigame(dimensions)
+	setup.opengl(dimensions)
 	texture = Texture("../res/test.png")
-	myImage = Texture("../res/jeu.png")
+	myImage = Texture("../res/test.png")
 	x1=0
 	y1=0
-	t1=1
-	t2=1
+
+	dimensions = (800, 800)
+	display = setup.pipigame(dimensions)
+	setup.opengl(dimensions)
+
 	while True:
-		gl.glClear(gl.GL_COLOR_BUFFER_BIT | gl.GL_DEPTH_BUFFER_BIT)
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
-		texture.render(0, 0, 2, 2)
-		myImage.render(x1, y1, t1, t2)
-		module.draw.Text.write("il é bo notr je", 0, 0)
+		texture.render(0, 0)
+		myImage.render(x1, y1)
+		draw.Text.write("il é bo notr je", 0, 0)
 
-		
-
-	
 
 		for e in pygame.event.get():
 			if e.type == pygame.QUIT:
