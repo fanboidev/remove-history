@@ -8,7 +8,7 @@ class Objects:
 		pass
 
 	@staticmethod
-	def rect(point1, point2, point3, point4, color):
+	def rect(point1, point2, point3, point4, color = (255, 255, 255)):
 		"""
 
 		:param point1: tuple
@@ -30,7 +30,7 @@ class Objects:
 		glEnd()
 
 	@staticmethod
-	def tri(point1, point2, point3, color):
+	def tri(point1, point2, point3, color = (255, 255, 255)):
 		"""
 
 		:param point1: tuple
