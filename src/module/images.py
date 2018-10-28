@@ -23,11 +23,10 @@ class Texture:
 			GL_RGBA, GL_UNSIGNED_BYTE, image
 		)
 
+
 	def setupTexture(self):
-		glEnable(GL_TEXTURE_2D)
-		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)
 		glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST)
-		glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_DECAL)
+
 
 	def render(self, posX, posY, sizeX, sizeY):
 		self.setupTexture()
@@ -48,4 +47,4 @@ class Texture:
 		glVertex2f(posX, posY + sizeY)
 
 		glEnd()
-		glDisable(GL_TEXTURE_2D)
+
