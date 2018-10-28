@@ -8,16 +8,19 @@ class Objects:
 		pass
 
 	@staticmethod
-	def rect(point1, point2, point3, point4):
+	def rect(point1, point2, point3, point4, color):
 		"""
 
 		:param point1: tuple
 		:param point2: tuple
 		:param point3: tuple
 		:param point4: tuple
+		:param color: tuple
 		:return: void
 		"""
 		glBegin(GL_QUADS)
+
+		glColor3f(color)
 
 		glVertex2f(point1[0], point1[1])
 		glVertex2f(point2[0], point2[1])
@@ -27,15 +30,18 @@ class Objects:
 		glEnd()
 
 	@staticmethod
-	def tri(point1, point2, point3):
+	def tri(point1, point2, point3, color):
 		"""
 
 		:param point1: tuple
 		:param point2: tuple
 		:param point3: tuple
+		:param color: tuple
 		:return: void
 		"""
 		glBegin(GL_TRIANGLES)
+
+		glColor3f(color)
 
 		glVertex2i(point1[0], point1[1])
 		glVertex2i(point2[0], point2[1])
