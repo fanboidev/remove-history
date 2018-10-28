@@ -27,9 +27,17 @@ from module.images import Texture
 filename = "../res/test.png"
 posX = 0
 posY = 0
-sizeX = 5
-sizeY = 5
 
 myImage = Texture(filename)
-myImage.render(posX, posY, sizeX, sizeY)
+myImage.render(posX, posY)
+```
+
+## Change size of image
+```python
+from module.images import Texture
+filename = "../res/test.png"
+newWidth = 10
+newHeight = 10
+myImage = Texture(filename)
+myImage.setSize(newWidth, newHeight)
 ```
