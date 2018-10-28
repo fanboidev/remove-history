@@ -50,7 +50,7 @@ class Text:
 
 	@staticmethod
 	def write(string, posX, posY):
-		glut.glutInit
+		glut.glutInit()
 		blending = False
 		if glIsEnabled(GL_BLEND):
 			blending = True
