@@ -1,15 +1,7 @@
 #/usr/bin/env python3
+from entities.species import Specie
 
-class Human:
-	def __init__(self, name, x, y):
-		self.x=x
-		self.y=y
-		self.name=name
 
-	def typing():
-		print("hello")
-	
-	def end():
-		while True:
-			print("dededededededededededededdeedededededed")
-        
+class Human(Specie):
+	def __init__(self, x, y, name):
+		Specie.__init__(self, x, y, name, "../res/jeu.png") # Call __init__ of Specie
